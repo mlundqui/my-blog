@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navbar />
-      {/* Add padding to prevent content from overlapping with the fixed Navbar */}
+      {'This is the Navbar'}
       <main style={{ paddingTop: '70px' }}>
         <Component {...pageProps} />
       </main>
