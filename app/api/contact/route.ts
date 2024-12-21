@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 
 // Load credentials from the service account JSON file
 const SERVICE_ACCOUNT_EMAIL = 'save-emails@lundquistwebsite.iam.gserviceaccount.com';
-const PRIVATE_KEY = process.env.PRIVATE_KEY
+const PRIVATE_KEY = process.env.PRIVATE_KEY ?? '';
 
 const SHEET_ID = '1CHU3t1OQqYyihvarPIQdicVIrkrtjod3CC5sOZpLeso'; // Get this from the Google Sheets URL
 

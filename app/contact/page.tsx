@@ -40,9 +40,12 @@ export default function Contact() {
       const result = await response.json();
       setSuccessMessage(result.message || 'Form submitted successfully!');
       setFormData({ name: '', email: '', message: '' }); // Reset the form
-    } catch (error: any) {
-      console.error('Error submitting form:', error);
-      setErrorMessage(error.message || 'Something went wrong. Please try again.');
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error(error.message); // Access the error message safely
+      } else {
+        console.error('An unexpected error occurred.');
+      }
     }
   };
 
