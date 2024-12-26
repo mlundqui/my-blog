@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import styles from './contact.module.css';
+import Navbar from 'app/components/Navbar';
 
 export default function Contact() {
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -50,7 +52,11 @@ export default function Contact() {
   };
 
   return (
+    
     <div className={styles.container}>
+      
+      
+  
       <h1 className={styles.heading}>Contact Me</h1>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
