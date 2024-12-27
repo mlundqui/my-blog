@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import styles from './contact.module.css';
-import Navbar from 'app/components/Navbar';
+//import Navbar from 'app/components/Navbar';
 
 export default function Contact() {
 

@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface NavItem {
   label: string;
@@ -28,9 +29,9 @@ const Navbar = () => {
     <nav className="w-full px-8 py-4 sm:px-20">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className="flex items-center justify-between">
-          <a href="/" className="text-xl font-semibold">
+          <Link href="/">
             Your Logo
-          </a>
+          </Link>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="sm:hidden p-2"
@@ -49,12 +50,12 @@ const Navbar = () => {
         `}>
           {navItems.map((item) => (
             <li key={item.href}>
-              <a 
+              <Link
                 href={item.href}
                 className="flex items-center gap-2 hover:underline hover:underline-offset-4"
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
