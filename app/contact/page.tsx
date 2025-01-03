@@ -56,7 +56,6 @@ export default function Contact() {
     <div className={styles.container}>
       
       
-  
       <h1 className={styles.heading}>Contact Me</h1>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
