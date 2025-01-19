@@ -1,14 +1,22 @@
 
+/**
+ * Home component representing the main page of the website.
+ * 
+ * @returns {JSX.Element} The Home page component.
+ */
+
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <div>
-      <main>
+      <main style={{ width: '100%' }}>
+        {/* Main heading */}
         <h1>Welcome to the Home Page!</h1>
         <p>This is the Home Page of my website.</p>
         <br></br> 
-        {/* Subsections */}
+
+        {/* About Us Section */}
         <section>
           <h2>About Us</h2>
           <p>Learn more about what we do and our mission.</p>
@@ -19,6 +27,7 @@ export default function Home() {
           />
         </section>
 
+        {/* Our Services Section */}
         <section>
           <h2>Our Services</h2>
           <p>Explore the services we offer to our customers.</p>
@@ -36,24 +45,25 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Gallery Section */}
         <section>
           <h2>Gallery</h2>
           <p>Check out some of our featured work!</p>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between' }}>
             <img
               src="/dogbanjo.gif"
               alt="Gallery Image 1"
-              style={{ width: '100%', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
+              style={{ width: '30%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }}
             />
             <img
               src="/snorlax.gif"
               alt="Gallery Image 2"
-              style={{ width: '100%', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
+              style={{ width: '30%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }}
             />
             <img
               src="/polarbear.gif"
               alt="Gallery Image 3"
-              style={{ width: '100%', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
+              style={{ width: '30%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }}
             />
           </div>
         </section>
