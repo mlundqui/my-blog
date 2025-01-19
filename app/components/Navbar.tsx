@@ -38,15 +38,15 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             <div className={`
-              w-6 h-0.5 bg-black transition-all duration-300 ease-out
+              w-6 h-0.5 bg-white transition-all duration-300 ease-out
               ${isMenuOpen ? 'transform rotate-45 translate-y-1.5' : 'mb-1'}
             `}></div>
             <div className={`
-              w-6 h-0.5 bg-black transition-all duration-300 ease-out
+              w-6 h-0.5 bg-white transition-all duration-300 ease-out
               ${isMenuOpen ? 'opacity-0' : 'mb-1'}
             `}></div>
             <div className={`
-              w-6 h-0.5 bg-black transition-all duration-300 ease-out
+              w-6 h-0.5 bg-white transition-all duration-300 ease-out
               ${isMenuOpen ? 'transform -rotate-45 -translate-y-1.5' : ''}
             `}></div>
           </button>
