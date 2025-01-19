@@ -1,15 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/*  --background: #ffffff;  */
+/* :root {
 
-:root {
-  --background: #ffffff;
+  --background: #ffffff;  
+  
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #171717;
+    
     --foreground: #ededed;
   }
 }
@@ -18,4 +21,30 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+*/
+
+:root {
+  /* Set the default background to a GIF */
+  --background: url('/space3.gif');
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: url('/space3.gif');
+    --foreground: #ededed;
+  }
+}
+
+html, body {
+  color: var(--foreground);
+  background: var(--background);
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-size: cover; /* Ensures the GIF covers the entire viewport */
+  background-position: center; /* Centers the background */
+  background-attachment: fixed; /* Prevents the background from scrolling */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Removes default body margin */
+  height: 100%; /* Ensures the background spans the full viewport height */
 }

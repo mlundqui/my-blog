@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-xl font-semibold">
-            Your Logo
+            Michael Lundquist 
           </Link>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
