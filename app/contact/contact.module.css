@@ -18,10 +18,43 @@
     flex-direction: column;
     gap: 1rem;
   }
+  .input {
+
+    /* existing styles */
+    
+    color: #0f0f0f;
+
+    width: 500px;
   
+    max-width: 500px;
+  
+    height: 40px;
+    
+    padding: 0.75rem;
+    
+  }
+  
+  
+  
+  .textarea {
+  
+    /* existing styles */
+  
+    width: 500px;
+  
+    max-width: 500px;
+    padding: 0.75rem; 
+    height: 100px;
+
+    color: #0f0f0f;
+  }
+  
+  /*
   .input{
     color: #0f0f0f;
   }
+
+  
 
   .textarea {
     padding: 0.5rem;
@@ -31,8 +64,9 @@
     width: 100%;
     color: #0f0f0f;
   }
-  
+  */
   .button {
+    width: 500px; 
     background-color: #0070f3;
     color: white;
     padding: 0.75rem;
