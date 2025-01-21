@@ -12,6 +12,7 @@ export const config = {
 
 interface BlogPost {
   title: string;
+  
   content: string;
 }
 
@@ -32,7 +33,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
       try {
         const fileType = uploadedFile.mimetype;
-        let title = uploadedFile.originalFilename || 'Untitled';
+        const title = uploadedFile.originalFilename || 'Untitled';
         let content = '';
 
         if (fileType === 'text/plain') {

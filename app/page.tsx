@@ -54,17 +54,17 @@ export default function Home() {
           <h2>Gallery</h2>
           <p>Check out some of our featured work!</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between' }}>
-            <img
+            <img 
               src="/dogbanjo.gif"
               alt="Gallery Image 1"
               style={{ width: '30%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }}
             />
-            <img
+            <img 
               src="/snorlax.gif"
               alt="Gallery Image 2"
               style={{ width: '30%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }}
             />
-            <img
+            <img 
               src="/polarbear.gif"
               alt="Gallery Image 3"
               style={{ width: '30%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }}
