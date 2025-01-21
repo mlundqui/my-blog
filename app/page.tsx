@@ -1,4 +1,3 @@
-
 /**
  * Home component representing the main page of the website.
  * 
@@ -7,17 +6,19 @@
 
 import Link from 'next/link';
 
+
 export default function Home() {
   return (
-    <div>
-      <main style={{ width: '100%' }}>
+    <div style={{ padding: '0 20px' }}>
+      <main style={{ width: '1200px', maxWidth: '1200px', margin: '0 auto' }}>
+        
         {/* Main heading */}
-        <h1>Welcome to the Home Page!</h1>
-        <p>This is the Home Page of my website.</p>
+        <center><h1>Welcome to the Home Page!</h1>
+        <p>This is the Home Page of my website.</p></center>
         <br></br> 
 
         {/* About Us Section */}
-        <section>
+        <center><section>
           <h2>About Us</h2>
           <p>Learn more about what we do and our mission.</p>
           <img
@@ -25,27 +26,30 @@ export default function Home() {
             alt="About Us"
             style={{ width: '20%', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
           />
-        </section>
+        </section></center>
 
         {/* Our Services Section */}
-        <section>
+        <center><section>
           <h2>Our Services</h2>
           <p>Explore the services we offer to our customers.</p>
-          <div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between' }}>
             <img
               src="/pikachu.gif"
               alt="Service 1"
-              style={{ width: '20%', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
+              style={{ width: '400px', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
             />
             <img
               src="/chillmoon.gif"
               alt="Service 2"
-              style={{ width: '20%', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
+              style={{ width: '400px', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
             />
           </div>
         </section>
+        
+        </center>
 
         {/* Gallery Section */}
+        <center>
         <section>
           <h2>Gallery</h2>
           <p>Check out some of our featured work!</p>
@@ -67,12 +71,13 @@ export default function Home() {
             />
           </div>
         </section>
+        </center>
       </main>
 
       <br />
 
       {/* Navigation Bar */}
-      <nav>
+      <center><nav>
         <p>This is the Navigation Bar</p>
         <ul>
           <li>
@@ -82,9 +87,7 @@ export default function Home() {
             <b><Link href="/contact">Contact</Link></b>
           </li>
         </ul>
-      </nav>
+      </nav></center>
     </div>
   );
 }
-
-
