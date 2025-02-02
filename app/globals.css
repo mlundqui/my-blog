@@ -26,3 +26,52 @@ html, body {
   margin: 0; /* Removes default body margin */
   height: 100%; /* Ensures the background spans the full viewport height */
 }
+
+/* Styling for the main heading (h1) */
+.main-heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Center content */
+.center {
+  text-align: center;
+}
+
+/* Flex container for images */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* General image styles */
+.image-small {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-large {
+  width: 400px;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-medium {
+  width: 20%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+}

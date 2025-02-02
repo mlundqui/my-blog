@@ -64,7 +64,7 @@ export default function Blog() {
       </main>
 
       <footer style={{ backgroundColor: '#f4f4f4', color: '#555', textAlign: 'center', padding: '1rem', marginTop: '2rem' }}>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Michael Lundquist. All rights reserved.</p>
       </footer>
     </div>
   );

@@ -5,6 +5,7 @@
  */
 
 import Link from 'next/link';
+import './globals.css' ;
 
 
 export default function Home() {
@@ -13,14 +14,17 @@ export default function Home() {
       <main style={{ width: '1200px', maxWidth: '1200px', margin: '0 auto' }}>
         
         {/* Main heading */}
-        <center><h1>Welcome to the Home Page!</h1>
-        <p>This is the Home Page of my website.</p></center>
+        
+        <center>
+          <h1 className="main-heading">
+            My Name is Michael Lundquist. Welcome to my Website!
+          </h1>
+          <p>Feel free to stay as long as you would like.</p>
+        </center>
         <br></br> 
 
         {/* About Us Section */}
         <center><section>
-          <h2>About Us</h2>
-          <p>Learn more about what we do and our mission.</p>
           <img
             src="/char.gif"
             alt="About Us"
@@ -30,8 +34,6 @@ export default function Home() {
 
         {/* Our Services Section */}
         <center><section>
-          <h2>Our Services</h2>
-          <p>Explore the services we offer to our customers.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between' }}>
             <img
               src="/pikachu.gif"
@@ -51,8 +53,8 @@ export default function Home() {
         {/* Gallery Section */}
         <center>
         <section>
-          <h2>Gallery</h2>
-          <p>Check out some of our featured work!</p>
+          <h2>Hello There!</h2>
+          <p>These are some of my favorite GIFs</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between' }}>
             <img 
               src="/dogbanjo.gif"
