@@ -1,17 +1,18 @@
+
 'use client';
 
+import "../globals.css";
 
-
-export default function Blog() {
+export default function Blog({allPostsData}) {
 
   return (
+    
     <div style={{ fontFamily: 'Arial, sans-serif', lineHeight: '1.6' }}>
+      
       
 
       <main style={{ maxWidth: '800px', margin: '2rem auto', padding: '0 1rem' }}>
-        <section>
-          <h2>Blog Posts</h2>
-        </section>
+        <center><h1 >BLOG</h1></center>
         <img
               src="/book.gif"
               alt="Service 1"
@@ -30,3 +31,5 @@ export default function Blog() {
   
   );
 }
+
+
