@@ -57,6 +57,7 @@ export default function Contact() {
       
       
       <h1 className={styles.heading}>Contact Me</h1>
+      
       <form onSubmit={handleSubmit} className={styles.form}>
         <input
           type="text"
@@ -88,6 +89,13 @@ export default function Contact() {
           Submit
         </button>
       </form>
+
+      <center><img
+              src="/email.gif"
+              alt="Service 1"
+              style={{ width: '400px', maxWidth: '600px', height: 'auto', borderRadius: '8px' }}
+            /></center>
+
       {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
       {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
     </div>
