@@ -1,16 +1,17 @@
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   /* Set the default background to a GIF */
-  --background: url('/space3.gif');
+  --background: url('/space2.gif');
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: url('/space3.gif');
+    --background: url('/space2.gif');
     --foreground: #ededed;
   }
 }

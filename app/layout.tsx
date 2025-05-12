@@ -79,8 +79,7 @@ export default function RootLayout({
           Instagram
         </a>
       </footer>
-      </div>
-        
+      </div> 
       </body>
     </html>
   );
